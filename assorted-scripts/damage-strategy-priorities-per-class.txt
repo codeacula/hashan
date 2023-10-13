@@ -1,0 +1,25 @@
+From: https://discord.com/channels/1018287767853203456/1018305001468215316/1119793388460449924
+
+Damage Strategy Priorities Per Class
+-----------------------------------
+Dragon - Bite vs Prone > Roar
+Shaman - Throttle
+Magi - Timeflux > Prone > Earth + Smash Legs
+Alchemist - Choleric Detonation
+Bard - Prone > Leg Breaks
+Blademaster - Prone > Impale > Multislash
+Depthswalker - Aeon Bursted Targets > Mutilate > Leach Capstone
+Jester - Aeon Bursted Targets > Binding/Give Target Bombs > Throttle
+Tekura - Prone > Axekick Impaled Target > BBT Prone and non-impaled target
+Shikudo - Prone > Crescent > Spinkick
+Serpent - Double Epseth with Magi > Double Delph > Garrote Proned/Double Espeth Proned
+DWC - Bisect Impaled > Impale Proned non-impaled > Double Prefarar > Double Delph
+SnB - Bisect Impaled > Impale Proned non-impaled > Combination Prefarar/Paralysis
+2h - Bisect Impaled > Impale Proned > Strike Head > Strike Torso
+DWB - Assault Torso > Hit Legs
+Pariah - Push Plagues/Delete an off target
+
+//-Tricks-\\
+-------------
+
+Magi + SnB/DWC - Warrior can open with Paralysis/Unblind to force an untree-able fork on your opponent. If They cure paralysis, the Magi can then transfix, but if they reblind, then they're susceptible to impale and the Magi should start to Timeflux + Break Legs
