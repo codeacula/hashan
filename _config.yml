@@ -1,0 +1,10 @@
+# Set the theme to Monokai
+theme: jekyll-theme-monokai
+
+# Set the Markdown processor to Kramdown
+markdown: kramdown
+
+# Configure Kramdown to use GitHub-flavored Markdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
