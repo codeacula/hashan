@@ -1,5 +1,5 @@
 # Set the theme to Monokai
-theme: jekyll-theme-monokai
+theme: jekyll-theme-chirpy
 
 # Set the Markdown processor to Kramdown
 markdown: kramdown
