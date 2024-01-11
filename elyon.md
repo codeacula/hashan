@@ -1,3 +1,3 @@
 # Elyon
 
-He is the king and loved Monika 4 eva.
+He is the king and loves Monika 4 eva.
