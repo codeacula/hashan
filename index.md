@@ -30,3 +30,4 @@
 ### Links
 
 - [Atul's Shipfitting Calculator](https://docs.google.com/spreadsheets/d/1xPcIhAkFN96GAyaGgGjVdIbESGjk4vHPK-FDTq_awHQ/edit#gid=0) - [From Discord](https://discord.com/channels/1018287767853203456/1058029122053492927/1061866872687034368)
+- [Elyon's Page](./elyon.md) - Don't click it.
