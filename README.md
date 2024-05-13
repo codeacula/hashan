@@ -1,5 +1,4 @@
-# hashan
-
+# Hashan
 Main Hashan Repo
 
 ## Bashing
@@ -8,7 +7,7 @@ Main Hashan Repo
 
 * [Trevize's Gold Tracker](https://github.com/trevize-achaea/scripts/releases) - [From Discord](https://discord.com/channels/1018287767853203456/1058029122053492927/1135441422305210468)
 * Dythesia's LDeck Sorter - [From Discord](https://discord.com/channels/1018287767853203456/1058029122053492927/1089275282583728230)
-  
+
 ## Combat
 
 ### Links
@@ -20,6 +19,7 @@ Main Hashan Repo
 * [Hikage's Loki Script](https://github.com/Hikagejuunin/Loki) - [From Discord](https://discord.com/channels/1018287767853203456/1018305001468215316/1084546707183898704)
 * [Legacy Sub Alch Users Prompt](https://discord.com/channels/1018287767853203456/1058029122053492927/1132020132454084749)
 * [Water Lord Offense](https://ada-young.com/pastebin/oK8OXaYO) - [From Discord](https://discord.com/channels/1018287767853203456/1018305001468215316/1111740101144350793) See the Discord link for requirements
+* [AK 8.5](https://www.dropbox.com/sh/m6dnd61o8ncc5oe/AAAmY0FPLzuIDaYKDH0WVHsEa?e=3&dl=0)
 
 ## Coding
 
