@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<AliasPackage>
+		<Alias isActive="yes" isFolder="no">
+			<name>Conquest Log</name>
+			<script>--[[
+INSTRUCTIONS:
+conquest log [whose log you want] [prime/on phase or off-phase] [clan alias where you want it written.]
+
+Use HASHAN's phase to determine on/prime or off phases.
+If Hashan's phase is 1 hour after Serenade, then use PRIME or ON as the identifier. All other org phases are relative to ours.
+
+Examples of use:
+
+conquest log eleusis prime tlos
+    would send "writelog tlos Eleusian phase is three days post Serenade."
+
+clog all prime tlos
+    would write the phases of all cities to TLOS.
+
+On and Prime mean the exact same thing.
+'conquest log' or 'clog' also do the exact same thing.
+]]--
+
+clog = clog or {}
+clog.opponent = matches[3]:lower()
+clog.phase = matches[4]:lower()
+clog.wherePost = matches[5]:lower()
+clog.aSlurs = {"ashtan","ashtani","a","boglim","boglims","nihilists"}
+clog.cSlurs = {"cyrene","cyrenian","cyrenese","c","vashnars","vashnarians","vashnari"}
+clog.eSlurs = {"e", "eleusis", "eleusian", "savages", "treeple"}
+clog.hSlurs = {"hashan","hashani","hashanite","h","us","we","our"}
+clog.mSlurs = {"mhaldor","mhaldorian","m","slaves","slave","zealots","zealot","bovine","cows","baelgrim"}
+clog.tSlurs = {"targ","targies","targossians","t","flammables"}
+clog.phaseOn = {
+"Our phase is one day post Serenade. Ashtan and Targossas are the same.",
+"Eleusian phase is three days post Serenade.",
+"Cyrenian phase is six days post Serenade.",
+"Mhaldorian phase is eleven days post Serenade."
+}
+clog.phaseOff = {
+"Our phase is thirteen days post Serenade. Ashtan and Targossas are the same.",
+"Eleusian phase is fifteen days post Serenade.",
+"Cyrenian phase is eighteen days post Serenade.",
+"Mhaldorian phase is twenty-three days post Serenade."
+}
+
+if clog.opponent == "all" then
+  if clog.phase == "on" or clog.phase == "prime" then
+    for n,v in ipairs(clog.phaseOn) do
+      send("writelog "..clog.wherePost.." "..v) 
+      end
+    elseif clog.phase == "off" then
+      for n,v in ipairs(clog.phaseOff) do
+      send("writelog "..clog.wherePost.." "..v) 
+      end
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+  end
+  
+elseif table.contains(clog.aSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Ashtani phase is one days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Ashtani phase is thirteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+    
+elseif table.contains(clog.tSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Targossian phase is one days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Targossian phase is thirteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+  
+elseif table.contains(clog.hSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Our phase is one days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Our phase is thirteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+    
+elseif table.contains(clog.cSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Cyrenian phase is six days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Cyrenian phase is eighteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+        
+elseif table.contains(clog.eSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Eleusian phase is three days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Eleusian phase is fifteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+
+elseif table.contains(clog.mSlurs, clog.opponent) then
+    if clog.phase == "on" or clog.phase == "prime" then
+      send("writelog "..clog.wherePost.." Mhaldorian phase is three days post Serenade.") 
+    elseif clog.phase == "off" then
+      send("writelog "..clog.wherePost.." Mhaldorian phase is fifteen days post Serenade.") 
+    else cecho("\n\n&lt;orange&gt;Invalid Phase Status.\n")
+    end
+else cecho("\n\n&lt;orange&gt;Invalid Conquest Target. "..clog.opponent:upper().." entered, not in the tables.\n")
+-------------------------------------------------------------------------------------
+end
+
+
+</script>
+			<command></command>
+			<packageName></packageName>
+			<regex>^(clog|conquest log) (\w+) (\w+) (\w+)$</regex>
+		</Alias>
+	</AliasPackage>
+</MudletPackage>
